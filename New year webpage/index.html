@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+    <title>Talst Group LLC 2026</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="jquery.fireworks.js"></script>
+</head>
+
+<body>
+<!-- Stars -->
+<div class="stars" aria-hidden="true"></div>
+<div class="stars2" aria-hidden="true"></div>
+
+
+<!-- Click hint -->
+<div id="hint" class="hint" aria-hidden="true">
+    <span>Click the logo</span>
+</div>
+
+<!-- Center Logo (clickable) -->
+<button id="logoBtn" class="logoBtn" aria-label="Open Talst letter" type="button">
+    <img class="logoImg" src="images/talst.jpg" alt="Talst logo" />
+</button>
+
+<div id="newyear" class="heroText newYearText">HAPPY NEW YEAR 2026</div>
+
+<!-- Reveal Layer (Envelope + Paper) -->
+<section id="reveal" class="reveal" aria-hidden="true">
+    <div class="revealCloseZone" id="closeZone" aria-label="Close"></div>
+
+    <button class="closeBtn" id="closeBtn" type="button" aria-label="Close">✕</button>
+
+    <div id="envelope" class="envelope" role="dialog" aria-modal="true" aria-label="New Year Letter">
+        <div class="envBody">
+            <div class="envBack"></div>
+
+            <!-- Flap -->
+            <div class="envFlap" aria-hidden="true"></div>
+
+            <!-- Paper (DOC) -->
+            <article id="paper" class="paper" aria-label="Letter content">
+                <p> Эрхэм хүндэт харилцагч, хамтран ажиллагч түнш танаа, </p>
+                <p>
+                    Манай компанийн үйл ажиллагаанд итгэл хүлээлгэн, хамтран ажиллаж буй Та бүхэнд чин сэтгэлийн талархал илэрхийлье. Бид хамтын ажиллагаа нь зөвхөн бизнесийн харилцаа бус, харин харилцан итгэлцэл, хариуцлага, тогтвортой хөгжилд суурилсан үнэт зүйл гэж үздэг.
+                </p>
+
+                <hr>
+
+                <p>
+                    Чанартай бүтээн байгуулалт, аюулгүй ажиллагаа, цаг хугацааг баримтлах зарчмыг эрхэмлэн ажиллахын зэрэгцээ харилцагч, түншүүдтэйгээ урт хугацаанд, найдвартай хамтран ажиллах нь бидний гол зорилго юм.
+                    Хамтран ажиллах нь бидний хувьд үргэлж таатай байдаг бөгөөд цаашдын хамтын бүтээн байгуулалт улам өргөжин тэлнэ гэдэгт итгэлтэй байна.
+                </p>
+
+                <p>
+                    Та бүхэнд амжилт, сайн сайхан бүхнийг хүсье.
+                </p>
+
+                <!-- Signature row -->
+                <div class="signatureRow">
+                    <img class="signatureImg" src="images/sig.png" alt="CEO signature" />
+                    <div class="signatureMeta">
+                        <div class="sigName">Zorigoo Ulziisaikhan</div>
+                        <div class="sigRole">Talst Group • Chief Executive Officer</div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- front cover shading -->
+            <div class="envFrontShade"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Background music (autoplay ажиллахгүй — click дээр play хийнэ) -->
+<audio id="bgMusic" src="audio/christmas-453699.mp3" preload="auto" loop></audio>
+
+<script>
+    // fireworks (sound хэрэггүй гэж хэлсэн)
+    $('body').fireworks({
+        sound: false,
+        opacity: 0.8,
+        width: '100%',
+        height: '100%'
+    });
+</script>
+
+<script src="app.js"></script>
+</body>
+</html>
