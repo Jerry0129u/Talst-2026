@@ -448,4 +448,35 @@ body.is-opening #fireworksField{
             border-radius: 999px;
         }
     }
+
+    @media (max-width: 480px){
+        .signatureRow{
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 10px;
+        }
+
+        .signatureImg{
+            width: 150px;
+        }
+
+        .signatureMeta{
+            text-align: right;
+            max-width: 100%;
+        }
+
+        .sigName{
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 1.2;
+            white-space: nowrap;
+        }
+
+        .sigRole{
+            font-size: 11px;
+            line-height: 1.25;
+            white-space: nowrap;
+            opacity: 0.85;
+        }
+    }
 }
