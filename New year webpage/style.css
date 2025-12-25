@@ -162,7 +162,7 @@ body::after{
     padding: 6px 14px;
 
     font-family: 'Antonio', sans-serif;
-    font-size: 14px;
+    font-size: 20px;
     letter-spacing: 3px;
     text-transform: uppercase;
 
@@ -180,7 +180,7 @@ body::after{
     transform: translateX(-50%);
     text-align:center;
     z-index: 4;
-    color: rgba(255,255,255,0.92);
+    color: #ffffff;
     user-select:none;
     transition: opacity var(--t-mid) ease, filter var(--t-mid) ease, transform var(--t-mid) var(--ease-lux);
 }
@@ -301,7 +301,6 @@ body.is-opening .heroText{
     opacity: 0.9;
 }
 
-/* flap using clip-path to avoid seam/circle artifacts */
 .envFlap{
     position:absolute;
     left:0;
@@ -316,7 +315,7 @@ body.is-opening .heroText{
     opacity: 0.95;
 }
 
-/* open flap */
+
 body.stage-flap .envFlap{
     transform: rotateX(170deg);
     opacity: 0.35;
@@ -371,15 +370,12 @@ body.stage-flap .envFlap{
     transition: transform 900ms var(--ease-lux), opacity 520ms ease;
 }
 
-
-/* Envelope доторх layer-уудын зөв дараалал */
 .envBody { position: relative; }
 
 .envBack { z-index: 0; }
 .envFrontShade { z-index: 1; pointer-events: none; }
 .envFlap { z-index: 4; pointer-events: none; }
 
-/* Paper хамгийн дээр байх ёстой */
 .paper {
     z-index: 5;
     position: absolute;
