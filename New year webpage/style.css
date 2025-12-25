@@ -167,8 +167,6 @@ body::after{
     text-transform: uppercase;
 
     color: #ffffff;
-    background: rgba(255,255,255,0.08);
-    border-radius: 999px;
 
     display: inline-block;
 }
@@ -509,9 +507,8 @@ body.is-opening #fireworksField{
     @media (max-width: 480px){
         .logoText{
             font-size: 22px;
-            letter-spacing: 2px;
-            margin-top: 8px;
-            padding: 5px 12px;
+            margin-top: -8px;
+            padding: 2px 12px;
         }
     }
 }
