@@ -157,6 +157,22 @@ body::after{
     pointer-events:none;
 }
 
+.logoText{
+    margin-top: 10px;
+    padding: 6px 14px;
+
+    font-family: 'Antonio', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    background: rgba(255,255,255,0.08);
+    border-radius: 999px;
+
+    display: inline-block;
+}
+
 /* === Hero Texts === */
 .heroText{
     position:absolute;
@@ -317,6 +333,20 @@ body.stage-flap .envFlap{
     opacity: 0.9;
 }
 
+.paperHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px 0 14px;
+}
+
+.paperGoldLogo{
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    opacity: 0.95;
+}
+
 
 .paper{
     position: absolute;
@@ -331,7 +361,7 @@ body.stage-flap .envFlap{
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 
-    background: #f7f5ef;
+    background: #ffffff;
     color: #141414;
     border-radius: 18px;
     padding: 20px 20px 16px 20px;
@@ -479,4 +509,18 @@ body.is-opening #fireworksField{
             opacity: 0.85;
         }
     }
+
+    @media (max-width: 480px){
+        .logoText{
+            font-size: 12px;
+            letter-spacing: 2px;
+            margin-top: 8px;
+            padding: 5px 12px;
+        }
+    }
+}
+
+@media (max-width: 480px){
+    .paperGoldLogo{ width: 86px; }
+    .paperHeader{ margin: 4px 0 12px; }
 }

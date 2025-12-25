@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
@@ -21,24 +20,21 @@
 </head>
 
 <body>
-<!-- Stars -->
 <div class="stars" aria-hidden="true"></div>
 <div class="stars2" aria-hidden="true"></div>
 
 
-<!-- Click hint -->
 <div id="hint" class="hint" aria-hidden="true">
     <span>Click the logo</span>
 </div>
 
-<!-- Center Logo (clickable) -->
 <button id="logoBtn" class="logoBtn" aria-label="Open Talst letter" type="button">
     <img class="logoImg" src="images/talst.jpg" alt="Talst logo" />
+    <div class="logoText">TALST GROUP</div>
 </button>
 
 <div id="newyear" class="heroText newYearText">HAPPY NEW YEAR 2026</div>
 
-<!-- Reveal Layer (Envelope + Paper) -->
 <section id="reveal" class="reveal" aria-hidden="true">
     <div class="revealCloseZone" id="closeZone" aria-label="Close"></div>
 
@@ -48,11 +44,12 @@
         <div class="envBody">
             <div class="envBack"></div>
 
-            <!-- Flap -->
             <div class="envFlap" aria-hidden="true"></div>
 
-            <!-- Paper (DOC) -->
             <article id="paper" class="paper" aria-label="Letter content">
+                <div class="paperHeader" aria-hidden="true">
+                    <img class="paperGoldLogo" src="images/talst2.jpg" alt="Talst logo 2" />
+                </div>
                 <p> Эрхэм хүндэт харилцагч, хамтран ажиллагч түнш танаа, </p>
                 <p>
                     Манай компанийн үйл ажиллагаанд итгэл хүлээлгэн, хамтран ажиллаж буй Та бүхэнд чин сэтгэлийн талархал илэрхийлье. Бид хамтын ажиллагаа нь зөвхөн бизнесийн харилцаа бус, харин харилцан итгэлцэл, хариуцлага, тогтвортой хөгжилд суурилсан үнэт зүйл гэж үздэг.
@@ -85,7 +82,6 @@
     </div>
 </section>
 
-<!-- Background music (autoplay ажиллахгүй — click дээр play хийнэ) -->
 <audio id="bgMusic" src="audio/christmas-453699.mp3" preload="auto" loop></audio>
 
 <script>
