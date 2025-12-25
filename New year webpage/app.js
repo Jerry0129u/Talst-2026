@@ -97,17 +97,16 @@
         }, 360);
     }
 
-    // close on ESC
+
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') closeReveal();
     });
 
-    // click handlers
+
     logoBtn?.addEventListener('click', openReveal);
     closeBtn?.addEventListener('click', closeReveal);
     closeZone?.addEventListener('click', closeReveal);
 
-    // mobile: iOS дээр "ghost click" багасгах
     logoBtn?.addEventListener('touchend', (e) => {
         // touchend дээр давхар click trigger болохоос сэргийлж болно
         // e.preventDefault();  // хэрвээ асуудал гарвал үүнийг асаа
